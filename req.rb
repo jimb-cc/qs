@@ -302,6 +302,6 @@ totalInsertnow = Time.now
 for i in 1..ARGV[0].to_i
   insertnow = Time.now
   insertdocs("requests")
-  puts "Documents inserted in #{Time.now - insertnow}"
+  puts "Documents inserted in #{Time.now - insertnow} count = #{i*1000}"
 end
 puts "ALL Documents inserted in #{Time.now - totalInsertnow}"
